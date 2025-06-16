@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan Desain Konoha‑Style</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <img src="assets/logo.png" class="logo" alt="Logo" />
+      <nav>
+        <button class="btn">Login</button>
+        <button class="btn btn-outline">Daftar</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="carousel">
+    <div class="carousel-slide">
+      <img src="assets/banner1.jpg" alt="Promo 1" />
+    </div>
+  </section>
+
+  <section class="main-content">
+    <aside class="announcement">
+      <marquee>📢 Pengumuman: Cek promo terbaru hari ini!</marquee>
+    </aside>
+    <div class="grid-container">
+      <div class="card">Provider 1</div>
+      <div class="card">Provider 2</div>
+      <div class="card">Provider 3</div>
+      <div class="card">Provider 4</div>
+      <div class="card">Provider 5</div>
+      <div class="card">Provider 6</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Latihan Konoha Design. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>* { box-sizing: border-box; }
+body { margin:0; background:#111; color:#eee; font-family:sans-serif; }
+.navbar { position:sticky; top:0; background:#1a1a1a; padding:10px 0; }
+.container { width:90%; max-width:1200px; margin:auto; display:flex; justify-content:space-between; align-items:center; }
+.logo { height:40px; }
+.btn {
+  margin-left:10px; padding:8px 18px;
+  background:#e91e63; color:#fff; border:none; border-radius:4px;
+  cursor:pointer;
+}
+.btn-outline { background:transparent; border:2px solid #e91e63; }
+.carousel { width:100%; overflow:hidden; }
+.carousel-slide img { width:100%; display:block; }
+.main-content { display:flex; width:90%; max-width:1200px; margin:20px auto; }
+.announcement { flex:1 0 200px; background:#333; padding:10px; margin-right:20px; color:#ff0; }
+.grid-container {
+  flex:3; display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(150px,1fr));
+  gap:16px;
+}
+.card {
+  background:#222; padding:20px;
+  border-radius:8px; text-align:center;
+}
+footer { background:#1a1a1a; text-align:center; padding:15px; margin-top:40px; }console.log("Desain visual Konoha-style siap!");
+// Nanti bisa ditambahkan:
+// – Carousel otomatis
+// – Modal login
+// – Animasi hover pada card
